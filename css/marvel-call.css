@@ -1,0 +1,72 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url('../fonts/OpenSans-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url('../fonts/OpenSans-Light.ttf'); 
+}
+
+@font-face {
+  font-family: OpenSans-ExtraBold;
+  src: url('../fonts/OpenSans-ExtraBold.ttf'); 
+}
+
+
+body{
+    font-family: OpenSans-Light;
+    background-color: #f4f4f4;
+}
+footer{
+    padding: 1% 20%;
+    font-size: 0.8em;
+    color:#ffffff;
+    text-align: center;
+}
+img.picpersonaje {
+    width: 120px;
+    float: left;
+    margin-right: 15px;
+}
+
+.personajes{
+    margin-bottom: 20px;
+}
+.personaje{
+    border:solid 1px #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    height: 350px;
+}
+.personaje .descripcion{
+    height:120px;
+    font-size: 0.5em;
+}
+.personaje .item-comic{
+    font-size: 0.4em;
+}
+.personaje h4{
+    font-family: OpenSans-Bold;
+}
+
+.personaje h6{
+    font-family: OpenSans-Regular;
+}
+nav.bg-marvel,
+footer.bg-marvel{
+    background-color: #2d2727;
+}
+.btn-red{
+ background-color: #ec1e23;   
+}
+
+.btn-default{
+    color:#b4b4b4;
+}
