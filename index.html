@@ -93,7 +93,12 @@
             <div class="col-sm-9" >
             <div class="row" id="lista-personajes"></div>
             </div>
-            <div class="col-sm-3"><h2><img src="icons/favourites.png" alt="Favoritos"> Mis Favoritos</h2></div>
+            <div class="col-sm-3"><h2><img src="icons/favourites.png" alt="Favoritos"> Mis Favoritos</h2>
+            
+                <div class="row" id="lista-favoritos">
+                </div>
+                
+            </div>
         
         
         </div>
@@ -117,22 +122,38 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="personajeModalLabel">&nbsp;</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="icons/btn-close.png" alt="cerrar"></span>
         </button>
       </div>
       <div class="modal-body" id="detalle-personaje">
         ...
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+        
+    <!-- Modal -->
+<div class="modal fade" id="comicModal" tabindex="-1" role="dialog" aria-labelledby="comicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="comicModalLabel">&nbsp;</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="icons/btn-close.png" alt="cerrar"></span>
+        </button>
+      </div>
+      <div class="modal-body" id="detalle-comic">
+        ...
+      </div>
+      <div class="modal-footer row" id="footer-comic">
+          <a href="#" class="btn col-sm-6" id="favorito" data-dismiss="modal"><img src="icons/btn-favourites-default.png" alt="Favorito" /> <span id="txtfavorito">Agregar Favorito</span> </a> 
+          <a href="#" data-comprar="" class="btn col-sm-6 rojo" ><img src="icons/shopping-cart-primary.png" alt="Comprar"/> Comprar Ahora (<span id="comic-price"></span>) </a> 
       </div>
     </div>
   </div>
 </div>
-    
     
     <script src="js/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

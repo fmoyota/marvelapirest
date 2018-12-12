@@ -43,14 +43,15 @@ img.picpersonaje {
     padding: 20px;
     margin: 10px;
     background-color: #ffffff;
-    height: 350px;
+    min-height: 350px;
 }
 .personaje .descripcion{
     height:120px;
     font-size: 0.5em;
 }
-.personaje .item-comic{
-    font-size: 0.4em;
+.item-comic{
+    font-size: 0.6em;
+    text-align: center;
 }
 .personaje h4{
     font-family: OpenSans-Bold;
@@ -65,8 +66,59 @@ footer.bg-marvel{
 }
 .btn-red{
  background-color: #ec1e23;   
+    color:#ffffff;
 }
 
 .btn-default{
     color:#b4b4b4;
+}
+.modal-header{
+    border: none;
+}
+.modal-header .close{
+    padding: 0.4em;
+}
+.modal-footer{
+    background-color: #dcdcdc;
+    padding: 0;
+    margin:0;
+}
+.modal-footer.row,
+.modal-footer.row>:not(:last-child),
+.modal-footer.row>:not(:first-child){
+    margin: 0;
+}
+.rojo,
+.rojo:active,
+.rojo:focus,
+.rojo:visited,
+.rojo:hover{
+   color:#ec1e23;
+}
+
+.sifavorito,
+.sifavorito:hover,
+.sifavorito:active,
+.sifavorito:focus,
+.sifavorito:visited{
+    background-color: #322827 !important;
+    color:#ec1e23 !important;
+}
+
+#favorito,
+#favorito:hover,
+#favorito:active,
+#favorito:focus,
+#favorito:visited{
+    background-color: #f0f0f0;
+    color:#3c3231;
+}
+.col-sm-8 .descripcion{
+    height: 160px;
+    overflow: scroll;
+}
+img.elimfav {
+    position: absolute;
+    top: -10px;
+    right: 0px;
 }
